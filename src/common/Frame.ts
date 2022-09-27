@@ -873,7 +873,7 @@ export class Frame {
           let element: HTMLStyleElement | HTMLLinkElement;
           if (!url) {
             element = document.createElement('style');
-            element.appendChild(document.createTextNode(content!));
+            element.appendChild(document.createTextNode(content));
           } else {
             const link = document.createElement('link');
             link.rel = 'stylesheet';
